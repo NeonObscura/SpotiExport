@@ -1,1 +1,1 @@
-# SpotifyPlaylistExporter
+# SpotiExport
