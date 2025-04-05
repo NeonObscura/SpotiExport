@@ -4,13 +4,13 @@ internal sealed class Result<T>
 {
     public bool Success { get; set; }
     public bool Failed => !Success;
-    public T? Data { get; set; }
+    public T? ResultValue { get; set; }
     public string? ErrorMessage { get; set; }
 
-    public Result(bool success, T? data = default, string? errorMessage = null)
+    public Result(bool success, T? resultValue = default, string? errorMessage = null)
     {
         Success = success;
-        Data = data;
+        ResultValue = resultValue;
         ErrorMessage = errorMessage;
     }
     
